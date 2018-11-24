@@ -10,9 +10,11 @@
   </ul>
 
   <br>
-  <%= link_to "back to main menu", cocktails_path, id: "backToMenuLink" %>
+  <%= link_to "Back to main menu", cocktails_path, id: "backToMenuLink" %>
   <br>
-  <%= link_to "add a new dose", new_cocktail_dose_path(@cocktail), id: "addDose" %>
+  <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail), id: "addDose" %>
+  <br>
+  <%= link_to "Delete this cocktail", cocktail_path(@cocktail), method: :delete, id: "deleteCocktail" %>
 </div>
 
 
